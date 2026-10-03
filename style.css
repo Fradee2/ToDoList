@@ -47,7 +47,7 @@ button {
     background-color: rgb(228, 241, 255);
     display: flex;
     justify-content: start;
-    gap: 20vw;
+    gap: 6vw;
     align-items: center;
     padding: 20px 0;
 }
@@ -86,7 +86,7 @@ span {
 #todo_list li:not(#todo_list_titles) {
     display: flex;
     justify-content: start;
-    gap: 20vw;
+    gap: 5vw;
     align-items: center;
     padding: 20px 10px;
     background-color: aliceblue;
