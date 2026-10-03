@@ -1,17 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header></header>
     <main>
         <h1 class="main_title">Список Дел</h1>
-        <section class="column" id="left_column"></section>
-        <section class="column" id="right_column"></section>
+        <section id="create_task">
+            <form>
+                <input type="text" placeholder="Введите задачу!">
+                <button type="submit">Сохранить</button>
+            </form>
+        </section>
+        <section id="tasks">
+            <ul id="todo_list">
+                 <li id="todo_list_titles">
+                    <span class="id_task" data-id="1">
+                        ID
+                    </span>
+                    <span class="text_task" >Текст задачи</span>
+                    <span class="status_task" >Статус</span>
+                    <span class="task_ended" ></span>
+                    <span class="dalete_task"  ></span>
+                </li>
+                <li>
+                    <span class="id_task" data-id="1">
+                        #1
+                    </span>
+                    <span class="text_task" data-id="1">Закончить проект</span>
+                    <span class="status_task" data-id="1">В работе</span>
+                    <span class="task_ended" data-id="1"><button data-id="1" class="task_ended_button" >Закончить</button></span>
+                    <span class="dalete_task"  data-id="1"><button class="dalete_task_button"  data-id="1">Удалить</button></span>
+                </li>
+                       <li>
+                    <span class="id_task" data-id="1">
+                        #1
+                    </span>
+                    <span class="text_task" data-id="1">Закончить проект</span>
+                    <span class="status_task" data-id="1">В работе</span>
+                    <span class="task_ended" data-id="1"><button data-id="1" class="task_ended_button" >Закончить</button></span>
+                    <span class="dalete_task"  data-id="1"><button class="dalete_task_button"  data-id="1">Удалить</button></span>
+                </li>
+
+                
+            </ul>
+        </section>
+
     </main>
     <footer></footer>
 </body>
+
 </html>

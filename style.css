@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+
+    max-width: 50vw;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(194, 215, 236);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.main_title {
+    text-align: center;
+    margin: 40px 0;
+}
+
+section {}
+
+#create_task {
+    display: block;
+    margin: 2vw auto;
+    background-color: rgb(240, 246, 252);
+    padding: 20px;
+    border-radius: 30px;
+    max-width: fit-content;
+}
+
+#create_task input {
+    font-size: 14px;
+    padding: 5px 5px;
+    box-shadow: 2px 2px 2px #000;
+    border: none;
+}
+
+button {
+    border-radius: 12px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+#todo_list_titles {
+    background-color: rgb(228, 241, 255);
+    display: flex;
+    justify-content: start;
+    gap: 20vh;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#create_task button {
+    background-color: rgb(225, 255, 255);
+
+}
+
+button:hover {
+    box-shadow: none;
+}
+
+#create_task button:hover {
+    background-color: rgb(206, 233, 233);
+    box-shadow: none;
+}
+
+
+ul {
+    list-style: none;
+    max-width: 45vw;
+    width: 100%;
+    margin: auto;
+}
+
+#todo_list li {
+    padding: 0 10px;
+}
+
+span {
+    max-width: 17vh;
+}
+
+
+#todo_list li:not(#todo_list_titles) {
+    display: flex;
+    justify-content: start;
+    gap: 20vh;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: aliceblue;
+}
+
+
+
+.task_ended_button {
+    background-color: green;
+    color: white;
+}
+
+.dalete_task_button {
+    background-color: red;
+    color: white;
+}
+#todo_list li:nth-of-type(2n):not(#todo_list_titles){
+background-color: white;
+}
