@@ -19,7 +19,6 @@ main {
     margin: 40px 0;
 }
 
-section {}
 
 #create_task {
     display: block;
@@ -42,14 +41,11 @@ button {
     padding: 5px;
     box-shadow: 5px 5px 5px #000;
 }
-
-#todo_list_titles {
-    background-color: rgb(228, 241, 255);
-    display: flex;
-    justify-content: start;
-    gap: 6vw;
+.todo-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 120px 120px 120px;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 10px;
 }
 
 #create_task button {
@@ -74,35 +70,24 @@ ul {
     margin: auto;
 }
 
-#todo_list li {
-    padding: 0 10px;
+
+
+
+
+
+#todo_list_titles li {
+    width: 100%;
 }
-
-span {
-    max-width: 17vw;
-}
-
-
-#todo_list li:not(#todo_list_titles) {
-    display: flex;
-    justify-content: start;
-    gap: 5vw;
-    align-items: center;
-    padding: 20px 10px;
-    background-color: aliceblue;
-}
-
-
 
 .task_ended_button {
     background-color: green;
     color: white;
 }
 
-.dalete_task_button {
+.delete_task_btn {
     background-color: red;
     color: white;
 }
-#todo_list li:nth-of-type(2n):not(#todo_list_titles){
+#todo_list li:nth-of-type(2n){
 background-color: white;
 }
