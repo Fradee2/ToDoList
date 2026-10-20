@@ -91,3 +91,19 @@ ul {
 #todo_list li:nth-of-type(2n){
 background-color: white;
 }
+
+.todo-filter-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-filter-row button{
+        border-radius: none;
+    box-shadow:none;
+    margin: 5px 10px;
+}
+
+[data-status="done"]{
+    text-decoration: line-through;
+}
