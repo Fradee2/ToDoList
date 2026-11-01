@@ -12,7 +12,6 @@ form.addEventListener('submit', function (e) {
     e.preventDefault();
 })
 
-
 function addTask(item) {
     if (item.value.trim() === "") {
         alert("Введина пустая строка!")
