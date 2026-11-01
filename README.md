@@ -19,7 +19,16 @@
 
 - HTML5
 - CSS3 (Grid Layout)
-- JavaScript (ES6+, Vanilla JS, DOM API)
+- TypeScript (типизация задач, DOM-элементов и событий)
+- JavaScript (компилируется из TS)
+- LocalStorage API
+
+## 🛠️ Технологии
+
+- HTML5
+- CSS3 (Grid Layout)
+- TypeScript (типизация задач, DOM-элементов и событий)
+- JavaScript (компилируется из TS)
 - LocalStorage API
 
 ## 📸 Скриншот
@@ -34,3 +43,11 @@ cd ToDoList
 \`\`\`
 
 Затем открыть `index.html` в браузере.
+
+
+Если меняешь код в `script.ts`, пересобери его:
+
+\`\`\`bash
+npm install -g typescript
+tsc script.ts
+\`\`\`
